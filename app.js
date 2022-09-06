@@ -1,6 +1,9 @@
 let grid = document.querySelector('.grid')
 const blockWidth = 100
 const blockHeight = 20
+const userStart = [230, 10]
+let currentPosition = userStart
+
 
 class Block {
     constructor(xAxis, yAxis) {
@@ -46,3 +49,7 @@ addBlocks()
 // creating user
 
 const user = document.createElement('div')
+user.classList.add('user')
+user.style.left = currentPosition[0] + 'px'
+user.style.bottom = currentPosition[1] + 'px'
+grid.appendChild(user)
