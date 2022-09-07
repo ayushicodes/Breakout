@@ -1,18 +1,39 @@
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .grid {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
     height: 300px;
     width: 560px;
-    border: 1px solid black;
-    top: 100px;
+    border: 3px solid rgb(94, 94, 128);
+    top: 30%;
+}
+
+.S {
+    background-color: rgb(94, 94, 128);
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 80%;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    letter-spacing: 4px;
+    color: white;
+
 }
 
 .block {
     position: absolute;
     width: 100px;
     height: 20px;
-    background-color: blue;
+    background-color: rgb(94, 94, 128);
 }
 
 .user {
@@ -27,6 +48,6 @@
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: red;
+    background-color: rgb(211, 127, 193);
 
 }
